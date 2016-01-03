@@ -21,6 +21,7 @@
     "jsranger": "^1.1.1",
     "keymirror": "^0.1.1",
     "object-assign": "^4.0.1",
+    "randomstrings": "0.0.2",
     "react": "^0.14.3",
     "react-dom": "^0.14.3"
   },
