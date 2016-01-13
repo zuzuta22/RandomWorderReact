@@ -1,5 +1,6 @@
 var React         = require('react');
 var RWStore       = require('../stores/RandomWordStore');
+var Header        = require('./Header.react');
 var RWSelector    = require('./RWSelector.react');
 var RWDisplay     = require('./RWDisplay.react');
 var Footer        = require('./Footer.react');
@@ -20,7 +21,7 @@ var RWApp = React.createClass({
   render: function () {
     return (
       <div className="rwApp">
-        <h1>RandomWorder</h1>
+        <Header />
         <RWSelector />
         <RWDisplay words={this.state.value} />
         <Footer />
