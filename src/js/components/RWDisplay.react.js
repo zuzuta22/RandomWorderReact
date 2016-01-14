@@ -1,5 +1,4 @@
 var React = require('react');
-// var RWApp = require('./RWApp.react');
 
 var RWDisplay = React.createClass({
   render: function () {
