@@ -83,7 +83,7 @@ var RWSelector = React.createClass({
       var L = jsranger(this.state.length.min, this.state.length.max+1);
       var options = L.map(function (o) {
         return (
-          <MenuItem value={o} label={o} primaryText={o} />
+          <MenuItem key={o} value={o} label={o} primaryText={o} />
         )
       });
       return (
@@ -95,7 +95,7 @@ var RWSelector = React.createClass({
       var L = jsranger(this.state.number.min, this.state.number.max+1);
       var options = L.map(function (o) {
         return (
-          <MenuItem value={o} label={o} primaryText={o} />
+          <MenuItem key={o} value={o} label={o} primaryText={o} />
         )
       });
       return (
