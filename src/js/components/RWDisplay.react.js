@@ -9,7 +9,7 @@ var RWDisplay = React.createClass({
     return (
       <List>
         {words.map(function(word){
-          return <ListItem primaryText={word}></ListItem>
+          return <ListItem primaryText={word} key={word} ></ListItem>
         })}
       </List>
     )
