@@ -22,8 +22,14 @@ var RWApp = React.createClass({
     return (
       <div className="rwApp">
         <Header />
-        <RWSelector />
-        <RWDisplay words={this.state.value} />
+        <div className="row">
+          <div className="col-md-4 col-sm-12">
+            <RWSelector />
+          </div>
+          <div className="col-md-8 col-sm-12">
+            <RWDisplay words={this.state.value} />
+          </div>
+        </div>
         <Footer />
       </div>
     );
