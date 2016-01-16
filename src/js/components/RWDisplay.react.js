@@ -1,15 +1,17 @@
 var React = require('react');
-// var RWApp = require('./RWApp.react');
+var List  = require('material-ui/lib/lists/list');
+var ListItem = require('material-ui/lib/lists/list-item');
+
 
 var RWDisplay = React.createClass({
   render: function () {
     var words = this.props.words;
     return (
-      <div>
+      <List>
         {words.map(function(word){
-          return <span>{word}<br /></span>
+          return <ListItem primaryText={word}></ListItem>
         })}
-      </div>
+      </List>
     )
   }
 });
